@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sandwich Maker</title>
+    <link rel="stylesheet" type="text/css" href="lib/node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>The Sandwich Maker</h1>
+        <p>This is simple single page application, where you can build a sandwich using the given ingredients, scroll to the bottom, and see the price of your final sandwich.</p>
+      </div>
+        <form>
+         <div class="form-group">
+           <label for="breadChoice">Select a bread (select one):</label>
+          <select class="form-control" id="breadChoice">
+            <option value="choice"/>Choices</option>
+            <option value="white"/>White</option>
+            <option value="wheat"/>Wheat</option>
+            <option value="Gluten Free"/>Gluten Free</option>
+            <option value="No Bread"/>No Bread</option>
+          </select>
+          <br />
+          <label for="meatChoice">Select your meat(s):</label>
+          <select class="form-control" id="meatChoice" multiple>
+            <option value="turkey" />Turkey</option>
+            <option value="bacon" />Bacon</option>
+            <option value="Salami" />Salami</option>
+            <option value="ham" />Ham</option>
+            <option value="pepperoni" />Pepperoni</option>
+            <option value="none" />No Meat</option>
+          </select>
+          <br />
+          <label for="cheeseChoice">Select your cheese(s):</label>
+          <select class="form-control" id="cheeseChoice" multiple>
+            <option value="American" />American</option>
+            <option value="provolone" />Provolone</option>
+            <option value="swiss" />Swiss</option>
+            <option value="cheddar" />Cheddar</option>
+            <option value="none" />No Cheese</option>
+          </select>
+          <br />
+          <label for="veggieChoice">Select your veggies:</label>
+          <select class="form-control" id="veggieChoice" multiple>
+            <option value="lettuce" />Lettuce</option>
+            <option value="Tomato" />Tomato</option>
+            <option value="Onion" />Onion</option>
+            <option value="Peppers" />Peppers</option>
+            <option value="Pickles" />Pickles</option>
+            <option value="none" />No Veggies</option>
+          </select>
+          <br />
+          <label for="condimentChoice">Select your condiments:</label>
+          <select class="form-control" id="condimentChoice" multiple>
+            <option value="Mayo" />Mayo</option>
+            <option value="Ranch" />Ranch</option>
+            <option value="Siracha Mayo" />Siracha Mayo</option>
+            <option value="Mustard" />Mustard</option>
+            <option value="none" />No Condiments</option>
+          </select>
+        </div>
+        </form>
+        <section>
+         <div>
+           <h3>Your Order:</h3>
+          <div id="finalSandwich"></div>
+        </div>
+        </section>
+    </div>
+  <script type="text/javascript" src="dist/app.js"></script>
+
+  </body>
+</html>
